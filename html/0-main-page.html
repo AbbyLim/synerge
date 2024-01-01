@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+	<link rel="stylesheet" type="text/css" href="../resources/css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/swiper.jquery.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+	<script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
+	<script>
+		var ww = $(window).width();
+		function mob(){
+			$(".section").removeClass("fp-auto-height fp-auto-height-responsive");
+			$(".section10").addClass("slider");
+			$(".section12").addClass("slider");
+		};
+		function web(){
+			$(".section").addClass("fp-auto-height fp-auto-height-responsive");
+			$(".section10").removeClass("slider");
+			$(".section12").removeClass("slider");
+		};
+		if(ww < 750){
+			mob();
+		} else if (ww >= 750){
+			web();
+		};
+		$(function(){
+			mob();
+		});
+		$(window).on('resize', function () {
+			ww = $(window).width();
+			if (ww < 750) {
+				mob();
+			}else{
+				web();
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.fullpage.extensions.min.js"></script>
+	<script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+	<title>SYNERGY A.I</title>
+</head>
+<body>
+<div class="wrap">
+	<div class="main-container">
+		 <!-- Swiper -->
+		<div id="fullpage">
+			<div class="section section1">
+				<div class="inner">
+					<div class="intro av-center">
+						<h1>
+							<div class="motion"><img src="../resources/images/intro_circle.png" alt="intro loog" /></div>
+							<img src="../resources/images/intro_logo.png" alt="SYNERGY A.I" />
+						</h1>
+						<div class="intro-txt">
+							A dream you dream alone is only a dream.<br />
+							A dream you dream together is reality.
+							<div>John Lennon</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section2">
+				<ul class="menu-list">
+					<li>
+						<div data-menuanchor="section17">
+							<div class="bg bg1">
+								<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+									<source type="video/mp4" src="../resources/images/bg1.mp4">
+								</video>
+							</div>
+							<a href="#section17"><span><span>Ignite</span></span></a>
+						</div>
+						<div data-menuanchor="section3">
+							<div class="bg bg2"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+							<a href="#section3"><span><span>Mac' AI</span></span></a>
+						</div>
+					</li>
+					<li>
+						<div data-menuanchor="section23">
+							<div class="bg bg3">
+								<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+									<source type="video/mp4" src="../resources/images/bg3.mp4">
+								</video>
+							</div>
+							<a href="#section23"><span><span>HyperMedicus</span></span></a>
+						</div>
+						<div data-menuanchor="section24">
+							<div class="bg bg4"><img src="../resources/images/bg4.gif" alt="bg" /></div>
+							<a href="#section24"><span><span>3KM</span></span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="section section3 slider">
+				<div class="inner mac-intro">
+					<div class="bg"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+					<div class="swiper mole-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><div class="logo"><img src="../resources/images/mac_logo.png" alt="Mac' AI" /></div></div>
+							<div class="swiper-slide second">
+								<div class="logo-txt"><div>부정맥 진단은<br />두더지 게임이다<span>.</span></div></div>
+								<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section4">
+				<div class="inner mac-award">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg5.mp4">
+						</video>
+					</div>
+					<div class="award"><img src="../resources/images/mac_award.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section5">
+				<div class="mac-family">
+					<!--
+					<div class="bg">
+						<video class="video" autoplay muted playsinline>
+							<source type="video/mp4" src="../resources/images/bg6.mp4">
+						</video>
+					</div>
+					-->
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section6">
+				<div class="mac-mole">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg7.mp4">
+						</video>
+						<div></div>
+					</div>
+					<div class="mole-txt">
+						<div><strong>두더지게임</strong>에서 <strong>언제 두더지가 나올지 몰라</strong> 잡기 어려운 것처럼,</div>
+						<div>
+							<div><strong>부정맥 진단</strong>도</div>
+							<div>이벤트가 발생하는</div>
+							<div><strong><span>‘</span> 그 순간 <span>’</span></strong> 을 놓치면</div>
+							발견하기 어렵습니다
+						</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<!-- 심장 -->
+			<div class="section section7 slider">
+				<div class="inner arrhythmia">
+					<div class="swiper arr-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="bg"></div>
+								<div class="arr-box">
+									<dl>
+										<dt><strong>*</strong>부정맥의 <strong>조기 진단</strong>이<br />중요한 이유<strong>.</strong></dt>
+										<dd>
+											<div>2050년 전 세계의 <strong>65세 이상 인구</strong>는 전체의 16.5%에 달하는</div>
+											<div><strong>16억명</strong>으로 지금보다 <strong>두 배 이상 증가.</strong></div>
+											<div>이러한 증가세 규모는 <strong>전례없어</strong></div>
+											<p>Ref.  UN Reports, 2022 Revision of World Population Prospects</p>
+										</dd>
+									</dl>
+									<div class="bar"></div>
+									<ul>
+										<li>16억명</li>
+										<li>10퍼센트</li>
+										<li>1조9000억 달러<div>* 한화 2565조원</div></li>											
+									</ul>
+								</div>
+								<div class="foot">
+									<div><span>*</span> <strong>당사가 규정한 치료가 필요한 부정맥, 즉 CIA (Clinically Important Arrhythmia) 의 범위</strong>는 다음과 같은 진단명을 받는 부정맥의 종류를 말합니다. Atrial <strong>Arrhythmia:</strong> atrial premature beats, premature atrial complexes, atrial tachycardia, atrial fibrillation, atrial flutter 등, <strong>Ventricular Premature Contraction:</strong> multiple premature contractions, ventricular premature beats, Ventricular Extrasystoles 등, <strong>Bundle Branch Block:</strong> right bundle branch block, left bundle branch block, complete bundle branch block 등</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bg2"></div>
+								<div class="arr-box">
+									<dl>
+										<dt><strong>*</strong>부정맥의 <strong>조기 진단</strong>이<br />중요한 이유<strong>.</strong></dt>
+										<dd>
+											<div><strong>연령에 따른</strong> 부정 <strong>유병율의 증가</strong> 경향.</div>
+											<div>미국 65세 이상 부정맥 유병율 9%, 스웨덴 70세 이상 부정맥</div>
+											<div>유병율 12.3%, <strong>전세계 10% 추산</strong> <sup>[1], [2]</sup></div>
+										</dd>
+									</dl>
+									<div class="bar"></div>
+									<ul>
+										<li>10퍼센트</li>
+										<li>1조9000억 달러<div>* 한화 2565조원</div></li>
+										<li>16억명</li>
+									</ul>
+								</div>
+								<div class="foot">
+									<div>[1] Go, A. S., Mozaffarian, D., Roger, V. L., Benjamin, E. J., Berry, J. D., Blaha, M. J., ... &amp; American Heart Association Statistics Committee and Stroke Statistics Subcommittee. (2016). Heart disease and stroke statistics-2016 update: a report from the American Heart Association. Circulation, 133(4), e38-e360.</div>
+									<div>[2] Friberg, L., Hammar, N., Pettersson, H., & Rosenqvist, M. (2015). Increased prevalence of atrial fibrillation among elderly subjects in a defined population. Circulation: Arrhythmia and Electrophysiology, 8(2), 266-272.</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bg2"></div>
+								<div class="arr-box">
+									<dl>
+										<dt><strong>*</strong>부정맥의 <strong>조기 진단</strong>이<br />중요한 이유<strong>.</strong></dt>
+										<dd>
+											<div>2017년, 이미 <strong>전세계적으로 뇌졸중으로 인해</strong></div>
+											<div>소비한 <strong>의료비가 약 1조 9000억 달러</strong>로 추산.</div>
+											<div><strong>고령화</strong>로 인한 <strong>막대한 사회적 부담</strong>이 가중될 예정.</div>
+										</dd>
+									</dl>
+									<div class="bar"></div>
+									<ul>
+										<li>1조9000억 달러<div>* 한화 2565조원</div></li>
+										<li>16억명</li>
+										<li>10퍼센트</li>
+									</ul>									
+								</div>
+								<div class="foot">
+									<div>[1] Go, A. S., Mozaffarian, D., Roger, V. L., Benjamin, E. J., Berry, J. D., Blaha, M. J., ... &amp; American Heart Association Statistics Committee and Stroke Statistics Subcommittee. (2016). Heart disease and stroke statistics-2016 update: a report from the American Heart Association. Circulation, 133(4), e38-e360.</div>
+									<div>[2] Friberg, L., Hammar, N., Pettersson, H., & Rosenqvist, M. (2015). Increased prevalence of atrial fibrillation among elderly subjects in a defined population. Circulation: Arrhythmia and Electrophysiology, 8(2), 266-272.</div>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section8 slider">
+				<div class="inner period">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg8.mp4">
+						</video>
+						<div></div>
+					</div>
+					<div class="swiper period-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="per-box">
+									<div class="period1">
+										<div>단순히 <span>가능성만</span>을 언급하는 것과</div>
+										<div><span>시기</span>를 <span>함께</span> 언급하는 것은</div>
+										<div><span>예측</span>으로서의 <span>가치</span>가 <span>다릅니다.</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="per-box">
+									<div class="period2">
+										<div><strong>일기예보</strong>로서의 가치를 <span>예로 들어볼까요?</span></div>
+										<div><span><strong>"언젠가는 비가 내립니다"</strong> 와 </span><strong>"내일은 비가 옵니다"</strong>는<br />분명히 <strong>다른 가치</strong>가 있습니다.</div>
+										<div><strong>내가 '언제' '무엇'을 해야할지를 <br class="mo-only" />결정하기 때문</strong>이죠.</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="per-box">
+									<div class="period1">
+										<div><img src="../resources/images/mac_logo.png" alt="Mac' AI" /> 는 <br class="mo-only" /><span>부정맥</span>의 <span>언제</span>를 언급하는</div>
+										<div><span>세계 유일</span>의 <br class="mo-only" />예측 인공지능입니다</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section9">
+				<div class="inner fishing">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg9.mp4">
+						</video>
+					</div>
+					<div class="fish-box">
+						<div>그간 부정맥진단은</div>
+						<div><strong>막연히 낚싯대를 드리우는 것</strong>과</div>
+						<div>같았습니다.</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section10 fp-auto-height fp-auto-height-responsive slider">
+				<div class="asis-tobe pc-only">
+					<div class="asis-cont">
+						<div class="stc1">
+							<h2>AS - IS<span></span></h2>
+						</div>
+						<div class="st-inner">
+							<ul>
+								<li>
+									<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
+									<div>
+										<div><strong>의심 증상</strong> 있어 심전도 측정,</div>
+										<div>그러나 <strong>정상 판정</strong></div>
+									</div>
+								</li>
+								<li><p>의료진의 주관적 판단</p></li>
+								<li>
+									<img src="../resources/images/img_asis2.png" alt="mac" class="img-asis2" />
+									<div>
+										<div><strong>예측이 없는</strong> 상태의 착용은</div>
+										<div>의미없는 고생이 되기도 합니다</div>
+									</div>
+								</li>
+								<li>
+									<img src="../resources/images/img_asis3.png" alt="mac" class="img-asis1" />
+									<div>
+										<div>부정맥 진단의 어려움,</div>
+										<div><strong>환자 관리 실패</strong></div>
+										<div>(뇌졸중, 심정지, 사망 등 <strong>부작용</strong>)</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="asis-tobe mo-only">
+					<div class="asis-cont">
+						<div class="stc1">
+							<h2>AS - IS<span></span></h2>
+						</div>
+						<div class="st-inner swiper asis-swiper">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
+										<div>
+											<div><strong>의심 증상</strong> 있어 심전도 측정,</div>
+											<div>그러나 <strong>정상 판정</strong></div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide"><div class="mo-wrap"><p><span>의료진의 주관적 판단</span></p></div></li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis2.png" alt="mac" class="img-asis2" />
+										<div>
+											<div><strong>예측이 없는</strong> 상태의 착용은</div>
+											<div>의미없는 고생이 되기도 합니다</div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis3.png" alt="mac" class="img-asis1" />
+										<div>
+											<div>부정맥 진단의 어려움,</div>
+											<div><strong>환자 관리 실패</strong></div>
+											<div>(뇌졸중, 심정지, 사망 등 <strong>부작용</strong>)</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="paging">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section11">
+				<div class="inner radar">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg10.mp4">
+						</video>
+					</div>
+					<div class="radar-box">
+						<div><img src="../resources/images/mac_logo.png" alt="Mac' AI"></div>
+						<div>마치 물고기의 이동경로를 예측하고</div>
+						<div>어망을 뿌리는 <strong>SONAR 어선</strong>과 같이</div>
+						<div><strong>부정맥 이벤트를 <span>예측</span>하고</strong></div>
+						<div><strong>반드시 <span>캐치</span>해 냅니다</strong></div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section12 fp-auto-height fp-auto-height-responsive slider">
+				<div class="asis-tobe pc-only">
+					<div class="tobe-cont">
+						<div class="stc1">
+							<h2>TO - BE<span></span></h2>
+						</div>
+						<div class="st-inner">
+							<ul>
+								<li>
+									<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
+									<div>
+										<div><strong>의심 증상</strong> 있어 심전도 측정,</div>
+										<div>그러나 <strong>정상 판정</strong></div>
+									</div>
+								</li>
+								<li>
+									<div class="tobes">
+										<div><img src="../resources/images/mac_logo3.png" alt="Mac' AI" /></div>
+										<div><strong>300만건</strong> 이상의 <strong>학습데이터 기반</strong></div>
+										<div>부정맥 <strong>이벤트예측</strong></div>
+										<div><strong>(92.7% 정확도)</strong></div>
+									</div>
+								</li>
+								<li>
+									<img src="../resources/images/img_asis2_2.png" alt="mac" class="img-asis2" />
+									<div>
+										<div><strong>근거를 기반</strong>으로</div>
+										<div>홀터 모니터링 또는 웨어러블 디바이스 착용</div>
+									</div>
+								</li>
+								<li>
+									<img src="../resources/images/img_asis3_2.png" alt="mac" class="img-asis1" />
+									<div>
+										<div><strong>조기 진단율 향상</strong></div>
+										<div><strong>명확한 치료</strong>전략</div>
+										<div>심각한 <strong>부작용 예방</strong></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="asis-tobe mo-only">
+					<div class="tobe-cont">
+						<div class="stc1">
+							<h2>TO - BE<span></span></h2>
+						</div>
+						<div class="st-inner swiper tobe-swiper">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
+										<div>
+											<div><strong>의심 증상</strong> 있어 심전도 측정,</div>
+											<div>그러나 <strong>정상 판정</strong></div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<div class="tobes">
+											<div>
+												<div><img src="../resources/images/mac_logo3.png" alt="Mac' AI" /></div>
+												<div><strong>300만건</strong> 이상의 <strong>학습데이터 기반</strong></div>
+												<div>부정맥 <strong>이벤트예측</strong></div>
+												<div><strong>(92.7% 정확도)</strong></div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis2_2.png" alt="mac" class="img-asis2" />
+										<div>
+											<div><strong>근거를 기반</strong>으로</div>
+											<div>홀터 모니터링 또는 웨어러블 디바이스 착용</div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis3_2.png" alt="mac" class="img-asis1 img-asis3" />
+										<div>
+											<div><strong>조기 진단율 향상</strong></div>
+											<div><strong>명확한 치료</strong>전략</div>
+											<div>심각한 <strong>부작용 예방</strong></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="paging">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section13">
+				<div class="mac-report">
+					
+				</div>
+			</div>
+			<div class="section section14">
+				<div class="mac-report2">
+					
+				</div>
+			</div>
+			<div class="section section15">
+				<div class="inner mac-outro">
+					<div class="outro">
+						<strong>뇌졸중과 돌연사</strong>
+						<strong><span>부정맥 예측</span>으로 예방하세요.</strong>
+						<div>인공지능이 당신과 당신 가족의 미래를 스마트하게 보호합니다.</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section16">
+				<div class="inner mac-outro mac-outro2">
+					<div class="bg"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+					<div class="outro">
+						<div class="logo"><img src="../resources/images/mac_logo.png" alt="Mac' AI" /></div>
+						<div class="logo-txt">
+							<strong>맥박 하나하나에 숨겨진 메시지</strong>
+							<div>단 한 순간의 심장 박동도 놓치지 않습니다.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Ignite -->
+			<div class="section section17 slider">
+				<div class="inner mac-intro">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg1.mp4">
+						</video>
+					</div>
+					<div class="swiper ignite-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><div class="logo"><img src="../resources/images/ignite_logo.png" alt="Ignite" /></div></div>
+							<div class="swiper-slide">
+								<div class="logo-txt">
+									<strong>정밀함에 대한 집착</strong>
+									<strong>전문의 수준으로 증명하다<span>.</span></strong>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section18">
+				<div class="inner radar">
+					<div class="bg">
+						<video class="video" muted playsinline loop controls="false" id="my-video1">
+							<source type="video/mp4" src="../resources/images/bg13.mp4">
+						</video>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
+				</div>
+			</div>
+			<div class="section section19 slider">
+				<div class="inner error-intro">
+					<div class="error-intro-inner">
+						<img src="../resources/images/ignite_img1.png" alt="Ignite" />
+						<img src="../resources/images/ignite_img2.png" alt="Ignite" />
+						<div>
+							<img src="../resources/images/ignite_img3.png" alt="같지 않다" />
+							<p>타원구체 (Ellipsoid) 측정 방식 :</p>
+							<div>평균 <span>오차율</span></div>
+							<div><strong>10 ~ 30%</strong></div>
+						</div>
+					</div>
+					<div class="swiper ignite-swiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"></div>
+							<div class="swiper-slide second">
+								<div class="error-box">
+									<div class="logo-txt">
+										<strong><span>'오차'</span>라는 단어는</strong>
+										<strong>우리 진료와 <span>어울리지 않습니다.</span></strong>
+										<strong>원하지도 않습니다.</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
+				</div>
+			</div>
+			<div class="section section20">
+				<div class="ignite-site">
+					
+				</div>
+			</div>
+			<div class="section section21 slider">
+				<div class="inner mac-intro">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg1.mp4">
+						</video>
+					</div>
+					<div class="mac-float"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
+					<div class="swiper ignite-swiper3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide first">
+								<div class="bg">
+									<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+										<source type="video/mp4" src="../resources/images/bg1.mp4">
+									</video>
+								</div>
+								<div class="innovation">
+									<div>A.I.가 빚어낸 혁신</div>
+									<p>새로운 차원의 정확성, 완벽한 진료의 가치를 경험하다</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><img src="../resources/images/inno_img1.png" alt="쉽다" /> 쉽다<span>.</span></dt>
+									<dd>
+										<div>환자를 위한 당신의 헌신적인 밤,</div>
+										<div>당신이 쌓아올린 건강한 기적, 이제 A.I.가 지킵니다.</div>
+										<div>이제 걱정없이 맡겨보세요.</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><img src="../resources/images/inno_img2.png" alt="빠르다" /> 빠르다<span>.</span></dt>
+									<dd>
+										<div>인간보다 500 배 이상 빠른 처리속도로</div>
+										<div>당신이 잠든 사이, 모든 데이터 작업을 충실히 완료합니다.</div>
+										<div>물론 지치지도 않습니다.</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><img src="../resources/images/inno_img3.png" alt="정밀하다" /> 정밀하다<span>.</span></dt>
+									<dd>
+										<div>수는 인간의 본성, 정확성은 우리 AI의 본능</div>
+										<div>전문가 수준의 정확도 -  반복측정에도 100%의 일치도를 보입니다.</div>
+										<div>완벽을 기준으로 삼으세요. AI는 항상 완벽을 목표로 합니다.</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section22">
+				<div class="inner error-intro">
+					<div class="error-intro-inner">
+						<img src="../resources/images/ignite_img1.png" alt="Ignite" />
+						<div>
+							<div> 유전성 다낭신</div>
+							<div class="bar"></div>
+							<div>진료에 <span>정밀함</span>을 더하다<span>.</span></div>
+							<p><strong>오차 없는</strong> 진료, <strong>완벽</strong>을 넘어선 <strong>헌신</strong>입니다.</p>
+						</div>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
+				</div>
+			</div>
+			<!-- HyperMedicus -->
+			<div class="section section23 slider">
+				<div class="inner hyper">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg3.mp4">
+						</video>
+					</div>
+					<div class="swiper hyper-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="logo av-center"><img src="../resources/images/hyper_logo.png" alt="Hypermedicus" /></div>
+							</div>
+							<div class="swiper-slide second">
+								<div class="logo-txt av-center">
+									<strong>의사 - 환자 관계의 회복</strong>
+									<strong>인공지능이 매개가 되다<span>.</span></strong>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 3KM -->
+			<div class="section section24 slider">
+				<div class="inner 3km">
+					<div class="bg"><img src="../resources/images/bg4.gif" alt="bg" /></div>
+					<div class="swiper km-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="logo av-center"><img src="../resources/images/km_logo.png" alt="삼키로닥터" /></div>
+							</div>
+							<div class="swiper-slide second">
+								<div class="logo-txt av-center">
+									<strong>나를 찾아주는 의사</strong>
+									<strong>진짜 주치의를 찾다<span>.</span></strong>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-wrap">
+			<a href="javascript:;" class="btn-nav">MENU</a>
+			<ul class="nav">
+				<li data-menuanchor="section17"><a href="#section17">Ignite</a></li>
+				<li data-menuanchor="section3"><a href="#section3">Mac' AI</a></li>
+				<li data-menuanchor="section23"><a href="#section23">HyperMedicus</a></li>
+				<li data-menuanchor="section24"><a href="#section24">3KM</a></li>
+			</ul>
+		</div>
+		<script>
+			function nav(obj){
+				var num = $(obj).attr("data-num");
+				//$(obj).addClass("on");
+				$.fn.fullpage.moveTo(num);
+			};
+			$(".nav-wrap .btn-nav").on("click", function (){
+				$(this).toggleClass("open");
+			});
+			$(document).ready(function() {
+				setTimeout(function(){
+					$(".wrap").addClass("loaded");
+				},1000);
+			  $("#fullpage").fullpage({         
+				anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'section13', 'section14', 'section15', 'section16', 'section17', 'section18', 'section19', 'section20', 'section21', 'section22', 'section23', 'section24'],
+				menu: '.nav',
+				scrollOverflow: true,
+				scrollingSpeed: 600,
+				onLeave: function(origin, destination, direction) {
+				  // 빠른전환으로 이벤트중복시 fullpage와 swiper전환시점 분리막기
+				  $('#fullpage').on('scroll touchmove mousewheel', function(event) {                    
+					event.preventDefault();
+					event.stopPropagation();
+					return false;
+				  });
+				  swiper1.mousewheel.disable();
+				  swiper2.mousewheel.disable();
+				  swiper3.mousewheel.disable();
+				  swiper4.mousewheel.disable();
+				  swiper5.mousewheel.disable();
+				  swiper6.mousewheel.disable();
+				  swiper7.mousewheel.disable();
+				  swiper8.mousewheel.disable();
+				  swiper9.mousewheel.disable();
+				  swiper10.mousewheel.disable();
+				},
+				afterLoad: function(anchorLink, index) {      
+				  // 전환이 끝난후 이벤트풀기                               
+				  $('#fullpage').off('scroll mousewheel');      
+				  if(!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove'); // 모바일분기
+				  if(swiper1) swiper1.mousewheel.enable();
+				  if(swiper2) swiper2.mousewheel.enable();
+				  if(swiper3) swiper3.mousewheel.enable();
+				  if(swiper4) swiper4.mousewheel.enable();
+				  if(swiper5) swiper5.mousewheel.enable();
+				  if(swiper6) swiper6.mousewheel.enable();
+				  if(swiper7) swiper7.mousewheel.enable();
+				  if(swiper8) swiper8.mousewheel.enable();
+				  if(swiper9) swiper9.mousewheel.enable();
+				  if(swiper10) swiper10.mousewheel.enable();
+				  if(!$(".slider").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
+				  var $video1 = $('#my-video1')[0];
+				  if($(".section18").hasClass("active")){
+					 $video1.pause();
+					 $video1.currentTime = 0;
+					 $video1.play();
+				  };	
+				  if($(".section13").hasClass("active") || $(".section14").hasClass("active") || $(".section20").hasClass("active")){
+					 $(".wrap").addClass("white");
+				  }else{
+					$(".wrap").removeClass("white");
+				  };
+				},
+			  });
+
+			  // swiper1
+			  var length1 = $(".mole-swiper .swiper-slide").length;
+			  var swiper1 = new Swiper('.mole-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 800,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					// 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
+					if(this.activeIndex != 0 && idx != length1) $.fn.fullpage.setAllowScrolling(false);
+					if(length1 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) //슬라이드가 2개밖에 없을때
+					//console.log('즉시 : ' + idx);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					// 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
+					if(idx == 0 || idx >= length1-1) $.fn.fullpage.setAllowScrolling(true);
+					 //console.log('전환후 : ' + idx);     
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper1.slideNext();  
+					  else swiper1.slidePrev();
+					},10);        
+				  },
+				}, 
+				pagination: {
+					el: ".mole-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".mole-swiper .swiper-button-next",
+					prevEl: ".mole-swiper .swiper-button-prev",
+				},
+			  });
+			  
+			  // swiper2
+			  var length2 = $(".arr-swiper .swiper-slide").length;
+			  var swiper2 = new Swiper('.arr-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length2) $.fn.fullpage.setAllowScrolling(false);
+					if(length2 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length2-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper2.slideNext();  
+					  else swiper2.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".arr-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".arr-swiper .swiper-button-next",
+					prevEl: ".arr-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper3
+			  var length3 = $(".period-swiper .swiper-slide").length;
+			  var swiper3 = new Swiper('.period-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length3) $.fn.fullpage.setAllowScrolling(false);
+					if(length3 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length3-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper3.slideNext();  
+					  else swiper3.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".period-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".period-swiper .swiper-button-next",
+					prevEl: ".period-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper4
+			  var length4 = $(".ignite-swiper .swiper-slide").length;
+			  var swiper4 = new Swiper('.ignite-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length4) $.fn.fullpage.setAllowScrolling(false);
+					if(length4 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length4-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper4.slideNext();  
+					  else swiper4.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".ignite-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".ignite-swiper .swiper-button-next",
+					prevEl: ".ignite-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper5
+			  var length5 = $(".ignite-swiper2 .swiper-slide").length;
+			  var swiper5 = new Swiper('.ignite-swiper2', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length5) $.fn.fullpage.setAllowScrolling(false);
+					if(length5 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length5-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper5.slideNext();  
+					  else swiper5.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".ignite-swiper2 .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".ignite-swiper2 .swiper-button-next",
+					prevEl: ".ignite-swiper2 .swiper-button-prev",
+				},
+			  });
+
+			  // swiper6
+			  var length6 = $(".ignite-swiper3 .swiper-slide").length;
+			  var swiper6 = new Swiper('.ignite-swiper3', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length6) $.fn.fullpage.setAllowScrolling(false);
+					if(length6 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length6-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper6.slideNext();  
+					  else swiper6.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".ignite-swiper3 .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".ignite-swiper3 .swiper-button-next",
+					prevEl: ".ignite-swiper3 .swiper-button-prev",
+				},
+			  });
+
+			  // swiper7
+			  var length7 = $(".hyper-swiper .swiper-slide").length;
+			  var swiper7 = new Swiper('.hyper-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length7) $.fn.fullpage.setAllowScrolling(false);
+					if(length7 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length7-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper7.slideNext();  
+					  else swiper7.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".hyper-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".hyper-swiper .swiper-button-next",
+					prevEl: ".hyper-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper8
+			  var length8 = $(".km-swiper .swiper-slide").length;
+			  var swiper8 = new Swiper('.km-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length8) $.fn.fullpage.setAllowScrolling(false);
+					if(length8 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length8-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper8.slideNext();  
+					  else swiper8.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".km-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".km-swiper .swiper-button-next",
+					prevEl: ".km-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper9
+			  var length9 = $(".asis-swiper .swiper-slide").length;
+			  var swiper9 = new Swiper('.asis-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length9) $.fn.fullpage.setAllowScrolling(false);console.log("false1")
+					if(length9 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);console.log("false2")
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length9-1) $.fn.fullpage.setAllowScrolling(true);
+					console.log("true")
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper9.slideNext();  
+					  else swiper9.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".asis-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".asis-swiper .swiper-button-next",
+					prevEl: ".asis-swiper .swiper-button-prev",
+				},
+			  });
+			  // swiper10
+			  var length10 = $(".tobe-swiper .swiper-slide").length;
+			  var swiper10 = new Swiper('.tobe-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length10) $.fn.fullpage.setAllowScrolling(false);console.log("false1")
+					if(length10 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);console.log("false2")
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length10-1) $.fn.fullpage.setAllowScrolling(true);
+					console.log("true")
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper10.slideNext();  
+					  else swiper10.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".tobe-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".tobe-swiper .swiper-button-next",
+					prevEl: ".tobe-swiper .swiper-button-prev",
+				},
+			  });
+
+
+			});
+		</script>
+	</div>
+</div>
+</body>
+</html>
