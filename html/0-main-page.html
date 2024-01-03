@@ -2,8 +2,41 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="description" content="Competitive edge with AI solutions capable of predicting diseases through ECG and conducting precise CT data analysis">
+	<meta name="keywords" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Medical AI solution provider">
+	<meta property="og:image" content="../resources/images/img.png">
+	<meta property="og:image:width" content="1920">
+	<meta property="og:image:height" content="1080">
+	<meta property="og:description" content="Competitive edge with AI solutions capable of predicting diseases through ECG and conducting precise CT data analysis">
+	<meta property="og:site_name" content="Synergy A.I.">
+	<meta property="og:locale" content="en_US">
+	<title>Synergy A.I.</title>
+	<link rel="shortcut icon" href="../resources/favi/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="../resources/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../resources/favi/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../resources/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../resources/favi/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../resources/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../resources/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../resources/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../resources/favi/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../resources/favi/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../resources/favi/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../resources/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../resources/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../resources/favi/favicon-16x16.png">
+	<link rel="manifest" href="../resources/favi/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../resources/favi/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="../resources/css/jquery.fullpage.min.css" />
 	<link rel="stylesheet" type="text/css" href="../resources/css/swiper.jquery.min.css" />
 	<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
@@ -11,22 +44,31 @@
 	<script>
 		var ww = $(window).width();
 		function mob(){
-			$(".section").removeClass("fp-auto-height fp-auto-height-responsive");
+			//$(".section").removeClass("fp-auto-height fp-auto-height-responsive");
 			$(".section10").addClass("slider");
 			$(".section12").addClass("slider");
 		};
 		function web(){
-			$(".section").addClass("fp-auto-height fp-auto-height-responsive");
+			//$(".section").addClass("fp-auto-height fp-auto-height-responsive");
 			$(".section10").removeClass("slider");
 			$(".section12").removeClass("slider");
 		};
-		if(ww < 750){
-			mob();
-		} else if (ww >= 750){
-			web();
+		function closeNav(){
+			$(".btn-nav").removeClass("open");
 		};
+		 closeNav();
+			
 		$(function(){
-			mob();
+			if(ww < 750){
+				mob();
+			} else if (ww >= 750){
+				web();
+			};
+			$(".btn-top").click(function () {
+				$.fn.fullpage.setScrollingSpeed(0);
+				$.fn.fullpage.moveTo(1, 1);
+				//$.fn.fullpage.setScrollingSpeed(700);
+			});
 		});
 		$(window).on('resize', function () {
 			ww = $(window).width();
@@ -41,7 +83,6 @@
 	<script type="text/javascript" src="../resources/js/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="../resources/js/jquery.fullpage.extensions.min.js"></script>
 	<script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
-	<title>SYNERGY A.I</title>
 </head>
 <body>
 <div class="wrap">
@@ -66,6 +107,10 @@
 			<div class="section section2">
 				<ul class="menu-list">
 					<li>
+						<div data-menuanchor="section3">
+							<div class="bg bg2"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+							<a href="#section3"><span><span>Mac' AI</span></span></a>
+						</div>
 						<div data-menuanchor="section17">
 							<div class="bg bg1">
 								<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
@@ -73,10 +118,6 @@
 								</video>
 							</div>
 							<a href="#section17"><span><span>Ignite</span></span></a>
-						</div>
-						<div data-menuanchor="section3">
-							<div class="bg bg2"><img src="../resources/images/bg2.gif" alt="bg" /></div>
-							<a href="#section3"><span><span>Mac' AI</span></span></a>
 						</div>
 					</li>
 					<li>
@@ -122,17 +163,16 @@
 						</video>
 					</div>
 					<div class="award"><img src="../resources/images/mac_award.png" alt="Mac' AI" /></div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 				</div>
 			</div>
 			<div class="section section5">
 				<div class="mac-family">
-					<!--
-					<div class="bg">
-						<video class="video" autoplay muted playsinline>
-							<source type="video/mp4" src="../resources/images/bg6.mp4">
+					<div class="video-wrap">
+						<video class="video" autoplay muted playsinline controls="controls">
+							<source type="video/mp4" src="../resources/video/vs5.mp4">
 						</video>
 					</div>
-					-->
 					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 				</div>
 			</div>
@@ -301,38 +341,39 @@
 					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 				</div>
 			</div>
-			<div class="section section10 fp-auto-height fp-auto-height-responsive slider">
+			<div class="section section10 slider">
 				<div class="asis-tobe pc-only">
 					<div class="asis-cont">
-						<div class="stc1">
-							<h2>AS - IS<span></span></h2>
-						</div>
 						<div class="st-inner">
-							<ul>
-								<li>
-									<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
-									<div>
+							<h3>AS - IS</h3>
+							<div class="st-box">
+								<dl>
+									<dt><div><img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
 										<div><strong>의심 증상</strong> 있어 심전도 측정,</div>
 										<div>그러나 <strong>정상 판정</strong></div>
-									</div>
-								</li>
-								<li><p>의료진의 주관적 판단</p></li>
-								<li>
-									<img src="../resources/images/img_asis2.png" alt="mac" class="img-asis2" />
-									<div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><p><span>의료진의 주관적 판단</span></p></div></dt>
+									<dd></dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis2.png" alt="mac" class="img-asis2" /></div></dt>
+									<dd>
 										<div><strong>예측이 없는</strong> 상태의 착용은</div>
 										<div>의미없는 고생이 되기도 합니다</div>
-									</div>
-								</li>
-								<li>
-									<img src="../resources/images/img_asis3.png" alt="mac" class="img-asis1" />
-									<div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis3.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
 										<div>부정맥 진단의 어려움,</div>
 										<div><strong>환자 관리 실패</strong></div>
 										<div>(뇌졸중, 심정지, 사망 등 <strong>부작용</strong>)</div>
-									</div>
-								</li>
-							</ul>
+									</dd>
+								</dl>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -381,6 +422,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 			</div>
 			<div class="section section11">
 				<div class="inner radar">
@@ -399,45 +441,43 @@
 					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 				</div>
 			</div>
-			<div class="section section12 fp-auto-height fp-auto-height-responsive slider">
+			<div class="section section12 slider">
 				<div class="asis-tobe pc-only">
 					<div class="tobe-cont">
-						<div class="stc1">
-							<h2>TO - BE<span></span></h2>
-						</div>
 						<div class="st-inner">
-							<ul>
-								<li>
-									<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
-									<div>
+							<h3>TO - BE</h3>
+							<div class="st-box">
+								<dl>
+									<dt><div><img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
 										<div><strong>의심 증상</strong> 있어 심전도 측정,</div>
 										<div>그러나 <strong>정상 판정</strong></div>
-									</div>
-								</li>
-								<li>
-									<div class="tobes">
-										<div><img src="../resources/images/mac_logo3.png" alt="Mac' AI" /></div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><p><img src="../resources/images/mac_logo.png" alt="Mac' AI" /></p></div></dt>
+									<dd>
 										<div><strong>300만건</strong> 이상의 <strong>학습데이터 기반</strong></div>
 										<div>부정맥 <strong>이벤트예측</strong></div>
 										<div><strong>(92.7% 정확도)</strong></div>
-									</div>
-								</li>
-								<li>
-									<img src="../resources/images/img_asis2_2.png" alt="mac" class="img-asis2" />
-									<div>
-										<div><strong>근거를 기반</strong>으로</div>
-										<div>홀터 모니터링 또는 웨어러블 디바이스 착용</div>
-									</div>
-								</li>
-								<li>
-									<img src="../resources/images/img_asis3_2.png" alt="mac" class="img-asis1" />
-									<div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis2_2.png" alt="mac" class="img-asis2" /></div></dt>
+									<dd>
+										<div><strong>예측이 없는</strong> 상태의 착용은</div>
+										<div>의미없는 고생이 되기도 합니다</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis3_2.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
 										<div><strong>조기 진단율 향상</strong></div>
 										<div><strong>명확한 치료</strong>전략</div>
 										<div>심각한 <strong>부작용 예방</strong></div>
-									</div>
-								</li>
-							</ul>
+									</dd>
+								</dl>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -497,16 +537,23 @@
 						</div>
 					</div>
 				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 			</div>
 			<div class="section section13">
 				<div class="mac-report">
-					
+					<div class="video-wrap">
+						<video class="video" autoplay muted playsinline controls="controls" data-keepplaying>
+							<source type="video/mp4" src="../resources/video/vs13.mp4">
+						</video>
+					</div>
 				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 			</div>
 			<div class="section section14">
 				<div class="mac-report2">
 					
 				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 			</div>
 			<div class="section section15">
 				<div class="inner mac-outro">
@@ -517,10 +564,12 @@
 					</div>
 					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 			</div>
 			<div class="section section16">
 				<div class="inner mac-outro mac-outro2">
 					<div class="bg"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+					<div class="mac-float"><img src="../resources/images/mac_float.png" alt="Mac' AI" /></div>
 					<div class="outro">
 						<div class="logo"><img src="../resources/images/mac_logo.png" alt="Mac' AI" /></div>
 						<div class="logo-txt">
@@ -546,6 +595,7 @@
 									<strong>정밀함에 대한 집착</strong>
 									<strong>전문의 수준으로 증명하다<span>.</span></strong>
 								</div>
+								<div class="mac-float type2"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
 							</div>
 						</div>
 						<div class="paging">
@@ -602,7 +652,12 @@
 			</div>
 			<div class="section section20">
 				<div class="ignite-site">
-					
+					<div class="video-wrap">
+						<video class="video" autoplay muted playsinline controls="controls" data-keepplaying>
+							<source type="video/mp4" src="../resources/video/vs20.mp4">
+						</video>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
 				</div>
 			</div>
 			<div class="section section21 slider">
@@ -612,7 +667,7 @@
 							<source type="video/mp4" src="../resources/images/bg1.mp4">
 						</video>
 					</div>
-					<div class="mac-float"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float.png" alt="Ignite" /></div>
 					<div class="swiper ignite-swiper3">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide first">
@@ -720,6 +775,7 @@
 								<div class="logo-txt av-center">
 									<strong>나를 찾아주는 의사</strong>
 									<strong>진짜 주치의를 찾다<span>.</span></strong>
+									<div>[2024년 상반기 출시예정]</div>
 								</div>
 							</div>
 						</div>
@@ -735,12 +791,17 @@
 		<div class="nav-wrap">
 			<a href="javascript:;" class="btn-nav">MENU</a>
 			<ul class="nav">
-				<li data-menuanchor="section17"><a href="#section17">Ignite</a></li>
-				<li data-menuanchor="section3"><a href="#section3">Mac' AI</a></li>
-				<li data-menuanchor="section23"><a href="#section23">HyperMedicus</a></li>
-				<li data-menuanchor="section24"><a href="#section24">3KM</a></li>
+				<li data-menuanchor="section3"><a href="#section3" onclick="closeNav()">Mac' AI</a></li>
+				<li data-menuanchor="section17"><a href="#section17" onclick="closeNav()">Ignite</a></li>
+				<li data-menuanchor="section23"><a href="#section23" onclick="closeNav()">HyperMedicus</a></li>
+				<li data-menuanchor="section24"><a href="#section24" onclick="closeNav()">3KM</a></li>
 			</ul>
 		</div>
+		<div class="langs">
+			<a href="">KR</a>
+			<a href="">EN</a>
+		</div>
+		<a href="javascript:;" class="btn-top"><span>TOP</span></a>
 		<script>
 			function nav(obj){
 				var num = $(obj).attr("data-num");
@@ -757,7 +818,7 @@
 			  $("#fullpage").fullpage({         
 				anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'section13', 'section14', 'section15', 'section16', 'section17', 'section18', 'section19', 'section20', 'section21', 'section22', 'section23', 'section24'],
 				menu: '.nav',
-				scrollOverflow: true,
+				//scrollOverflow: true,
 				scrollingSpeed: 600,
 				onLeave: function(origin, destination, direction) {
 				  // 빠른전환으로 이벤트중복시 fullpage와 swiper전환시점 분리막기
@@ -776,6 +837,16 @@
 				  swiper8.mousewheel.disable();
 				  swiper9.mousewheel.disable();
 				  swiper10.mousewheel.disable();
+				  if(swiper1) swiper1.slideTo(0);
+				  if(swiper2) swiper2.slideTo(0);
+				  if(swiper3) swiper3.slideTo(0);
+				  if(swiper4) swiper4.slideTo(0);
+				  if(swiper5) swiper5.slideTo(0);
+				  if(swiper6) swiper6.slideTo(0);
+				  if(swiper7) swiper7.slideTo(0);
+				  if(swiper8) swiper8.slideTo(0);
+				  if(swiper9) swiper9.slideTo(0);
+				  if(swiper10) swiper10.slideTo(0);
 				},
 				afterLoad: function(anchorLink, index) {      
 				  // 전환이 끝난후 이벤트풀기                               
@@ -791,13 +862,21 @@
 				  if(swiper8) swiper8.mousewheel.enable();
 				  if(swiper9) swiper9.mousewheel.enable();
 				  if(swiper10) swiper10.mousewheel.enable();
-				  if(!$(".slider").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
+				  if(!$(".slider").hasClass("active")) {
+					  $.fn.fullpage.setAllowScrolling(true);
+					   //if(swiper1) swiper1.slideTo(0);
+				  }
 				  var $video1 = $('#my-video1')[0];
 				  if($(".section18").hasClass("active")){
 					 $video1.pause();
 					 $video1.currentTime = 0;
 					 $video1.play();
 				  };	
+				  if($(".section1").hasClass("active")){
+					 $(".wrap").addClass("first-page");
+				  }else{
+					$(".wrap").removeClass("first-page");
+				  };
 				  if($(".section13").hasClass("active") || $(".section14").hasClass("active") || $(".section20").hasClass("active")){
 					 $(".wrap").addClass("white");
 				  }else{
