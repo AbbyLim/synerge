@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="description" content="Competitive edge with AI solutions capable of predicting diseases through ECG and conducting precise CT data analysis">
+	<meta name="keywords" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Medical AI solution provider">
+	<meta property="og:image" content="../resources/images/img.png">
+	<meta property="og:image:width" content="1920">
+	<meta property="og:image:height" content="1080">
+	<meta property="og:description" content="Competitive edge with AI solutions capable of predicting diseases through ECG and conducting precise CT data analysis">
+	<meta property="og:site_name" content="Synergy A.I.">
+	<meta property="og:locale" content="en_US">
+	<title>Synergy A.I.</title>
+	<link rel="shortcut icon" href="../resources/favi/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="../resources/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../resources/favi/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../resources/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../resources/favi/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../resources/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../resources/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../resources/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../resources/favi/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../resources/favi/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../resources/favi/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../resources/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../resources/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../resources/favi/favicon-16x16.png">
+	<link rel="manifest" href="../resources/favi/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../resources/favi/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="../resources/css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/swiper.jquery.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+	<script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
+	<script>
+		var ww = $(window).width();
+		function mob(){
+			//$(".section").removeClass("fp-auto-height fp-auto-height-responsive");
+			$(".section10").addClass("slider");
+			$(".section12").addClass("slider");
+		};
+		function web(){
+			//$(".section").addClass("fp-auto-height fp-auto-height-responsive");
+			$(".section10").removeClass("slider");
+			$(".section12").removeClass("slider");
+		};
+		function closeNav(){
+			$(".btn-nav").removeClass("open");
+		};
+		 closeNav();
+			
+		$(function(){
+			if(ww < 750){
+				mob();
+			} else if (ww >= 750){
+				web();
+			};
+			$(".btn-top").click(function () {
+				$.fn.fullpage.setScrollingSpeed(0);
+				$.fn.fullpage.moveTo(1, 1);
+				//$.fn.fullpage.setScrollingSpeed(700);
+			});
+		});
+		$(window).on('resize', function () {
+			ww = $(window).width();
+			if (ww < 750) {
+				mob();
+			}else{
+				web();
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.fullpage.extensions.min.js"></script>
+	<script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div class="wrap en">
+	<div class="main-container">
+		 <!-- Swiper -->
+		<div id="fullpage">
+			<div class="section section1">
+				<div class="inner">
+					<div class="intro av-center">
+						<h1>
+							<div class="motion"><img src="../resources/images/intro_circle.png" alt="intro loog" /></div>
+							<img src="../resources/images/intro_logo.png" alt="SYNERGY A.I" />
+						</h1>
+						<div class="intro-txt">
+							A dream you dream alone is only a dream.<br />
+							A dream you dream together is reality.
+							<div class="bar"></div>
+							<div>John Lennon</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section2">
+				<ul class="menu-list">
+					<li>
+						<div data-menuanchor="section3">
+							<div class="bg bg2"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+							<a href="#section3"><span><span>Mac' AI</span></span></a>
+						</div>
+						<div data-menuanchor="section17">
+							<div class="bg bg1">
+								<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+									<source type="video/mp4" src="../resources/images/bg1.mp4">
+								</video>
+							</div>
+							<a href="#section17"><span><span>Ignite</span></span></a>
+						</div>
+					</li>
+					<li>
+						<div data-menuanchor="section23">
+							<div class="bg bg3">
+								<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+									<source type="video/mp4" src="../resources/images/bg3.mp4">
+								</video>
+							</div>
+							<a href="#section23"><span><span>HyperMedicus</span></span></a>
+						</div>
+						<div data-menuanchor="section24">
+							<div class="bg bg4"><img src="../resources/images/bg4.gif" alt="bg" /></div>
+							<a href="#section24"><span><span>3KM</span></span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="section section3 slider">
+				<div class="inner mac-intro">
+					<div class="bg"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+					<div class="swiper mole-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><div class="logo"><img src="../resources/images/mac_logo.png" alt="Mac' AI" /></div></div>
+							<div class="swiper-slide second">
+								<div class="logo-txt"><div>Diagnosing arrhythmia is like<br /> playing the mole-catching game<span>.</span></div></div>
+								<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section4">
+				<div class="inner mac-award">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg5.mp4">
+						</video>
+					</div>
+					<div class="award"><img src="../resources/images/mac_award_en.png" alt="Mac' AI" /></div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section5">
+				<div class="mac-family">
+					<div class="video-wrap">
+						<video class="video" autoplay muted playsinline controls="controls">
+							<source type="video/mp4" src="../resources/video/vs5.mp4">
+						</video>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section6">
+				<div class="mac-mole">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg7.mp4">
+						</video>
+						<div></div>
+					</div>
+					<div class="mole-txt">
+						<div>
+							<strong>Just Like in a Game of Whack-a-Mole</strong>
+							<strong>Same as Whack-a Mole,</strong>
+							<div>It’s Hard to Catch a Mole. Because You Don’t Know,</div>
+							<strong>When It Will Pop up</strong>
+						</div>
+						<div>
+							<strong>Detecting Arrhythmia Has Been Difficult</strong>
+							<div>Because We Missed <strong>the <span>‘</span>Moment<span>’</span></strong></div>
+							<div>When the Arrhythmia Event Occured</div>
+						</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<!-- 심장 -->
+			<div class="section section7 slider">
+				<div class="inner arrhythmia">
+					<div class="swiper arr-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="bg"></div>
+								<div class="arr-box">
+									<dl>
+										<dt><strong>*</strong>The importance of <strong>early diagnosis</strong> of arrhythmia<strong>.</strong></dt>
+										<dd>
+											<div>By 2050, the global <strong>population aged 65 and older</strong></div>
+											<div>will reach over <strong>1.6 billion</strong>, accounting for 16.5% of the total population,</div>
+											<div>more than double the current number.</div>
+											<div>This <strong>unprecedented</strong> growth in size is remarkable</div>
+											<p>Ref.  UN Reports, 2022 Revision of World Population Prospects</p>
+										</dd>
+									</dl>
+									<div class="bar"></div>
+									<ul>
+										<li>160million people</li>
+										<li>10percent</li>
+										<li>1.9 trillion dollars</li>	
+									</ul>
+								</div>
+								<div class="foot">
+									<div><span>*</span> <strong>The range of arrhythmias requiring treatment as defined by our company,</strong> known as CIA (Clinically Important Arrhythmia), includes the following types of diagnosed arrhythmias: Atrial <strong>Arrhythmia:</strong> atrial premature beats, premature atrial complexes, atrial tachycardia, atrial fibrillation, atrial flutter, etc. <strong>Ventricular Premature Contraction:</strong> multiple premature contractions, ventricular premature beats, Ventricular Extrasystoles, etc.  <strong>Bundle Branch Block:</strong> right bundle branch block, left bundle branch block, complete bundle branch block, etc</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bg2"></div>
+								<div class="arr-box">
+									<dl>
+										<dt><strong>*</strong>The importance of <strong>early diagnosis</strong> of arrhythmia<strong>.</strong></dt>
+										<dd>
+											<div>The increasing trend of arrhythmia prevalence <strong>according to age</strong>:</div>
+											<div>In the United States, arrhythmia prevalence among those aged 65 and older is 9%. In Sweden,</div>
+											<div>the prevalence among those aged 70 and older is 12.3%. <strong>An estimated global prevalence of 10%</strong> <sup>[1], [2]</sup></div>
+										</dd>
+									</dl>
+									<div class="bar"></div>
+									<ul>
+										<li>10percent</li>
+										<li>1.9 trillion dollars</li>	
+										<li>160million people</li>
+									</ul>
+								</div>
+								<div class="foot">
+									<div>[1] Go, A. S., Mozaffarian, D., Roger, V. L., Benjamin, E. J., Berry, J. D., Blaha, M. J., ... &amp; American Heart Association Statistics Committee and Stroke Statistics Subcommittee. (2016). Heart disease and stroke statistics-2016 update: a report from the American Heart Association. Circulation, 133(4), e38-e360.</div>
+									<div>[2] Friberg, L., Hammar, N., Pettersson, H., & Rosenqvist, M. (2015). Increased prevalence of atrial fibrillation among elderly subjects in a defined population. Circulation: Arrhythmia and Electrophysiology, 8(2), 266-272.</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bg2"></div>
+								<div class="arr-box">
+									<dl>
+										<dt><strong>*</strong>The importance of <strong>early diagnosis</strong> of arrhythmia<strong>.</strong></dt>
+										<dd>
+											<div>In 2017, it was estimated that approximately</div>
+											<div><strong>$1.9 trillion was spent globally on medical expenses due to strokes.</strong></div>
+											<div>The significant societal burden due to aging is expected to intensify</div>
+										</dd>
+									</dl>
+									<div class="bar"></div>
+									<ul>
+										<li>1.9 trillion dollars</li>	
+										<li>160million people</li>
+										<li>10percent</li>
+									</ul>									
+								</div>
+								<div class="foot">
+									<div>[1] Go, A. S., Mozaffarian, D., Roger, V. L., Benjamin, E. J., Berry, J. D., Blaha, M. J., ... &amp; American Heart Association Statistics Committee and Stroke Statistics Subcommittee. (2016). Heart disease and stroke statistics-2016 update: a report from the American Heart Association. Circulation, 133(4), e38-e360.</div>
+									<div>[2] Friberg, L., Hammar, N., Pettersson, H., & Rosenqvist, M. (2015). Increased prevalence of atrial fibrillation among elderly subjects in a defined population. Circulation: Arrhythmia and Electrophysiology, 8(2), 266-272.</div>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section8 slider">
+				<div class="inner period">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg8.mp4">
+						</video>
+						<div></div>
+					</div>
+					<div class="swiper period-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="per-box">
+									<div class="period1">
+										<div>The <span>true value</span> of prediction <span>reveals</span></div>
+										<div>only when <span>possibility</span> comes along <span>with specific time period</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="per-box">
+									<div class="period2">
+										<div><span><strong>'Sometime, it will rain'</strong> and</span> <strong>'It will rain tomorrow'</strong></div>
+										<div>clearly hold <strong>different values.</strong></div>
+										<div><strong>It's because it determines when and what I should do</strong></div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="per-box">
+									<div class="period1">
+										<div><img src="../resources/images/mac_logo.png" alt="Mac' AI" /> is <br class="mo-only" /><span>the world's only</span> <br class="mo-only" />AI that predicts</div>									
+										<div>the <span>timing</span> of <span>arrhythmia.</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section9">
+				<div class="inner fishing">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg9.mp4">
+						</video>
+					</div>
+					<div class="fish-box">
+						<div>Until now, Diagnosing Arrhythmia Was Like</div>
+						<div><strong>Vaguely Casting a Fishing Rod and Waiting</strong></div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section10 slider">
+				<div class="asis-tobe pc-only">
+					<div class="asis-cont">
+						<div class="st-inner">
+							<h3>AS - IS</h3>
+							<div class="st-box">
+								<dl>
+									<dt><div><img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
+										<div><strong>Suspecting symptoms</strong> led to an ECG measurement,</div>
+										<div>but resulted<strong> in a normal diagnosis</strong></div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><p><span>Subjective judgments by the medical team.</span></p></div></dt>
+									<dd></dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis2.png" alt="mac" class="img-asis2" /></div></dt>
+									<dd>
+										<div>Wearingdevices <strong>without predictive capabilities</strong></div>
+										<div>can sometimes be meaningless suffering</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis3.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
+										<div>The challenge of arrhythmia diagnosis,</div>
+										<div><strong>failure in patient management</strong></div>
+										<div>(<strong>side effects</strong> such as stroke, cardiac arrest, death, etc.)</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="asis-tobe mo-only">
+					<div class="asis-cont">
+						<div class="stc1">
+							<h2>AS - IS<span></span></h2>
+						</div>
+						<div class="st-inner swiper asis-swiper">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
+										<div>
+											<div><strong>Suspecting symptoms</strong> led to an ECG measurement,</div>
+										<div>but resulted<strong> in a normal diagnosis</strong></div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide"><div class="mo-wrap"><p><span>Subjective judgments by the medical team.</span></p></div></li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis2.png" alt="mac" class="img-asis2" />
+										<div>
+											<div>Wearingdevices <strong>without predictive capabilities</strong></div>
+											<div>can sometimes be meaningless suffering</div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis3.png" alt="mac" class="img-asis1" />
+										<div>
+											<div>The challenge of arrhythmia diagnosis,</div>
+											<div><strong>failure in patient management</strong></div>
+											<div>(<strong>side effects</strong> such as stroke, cardiac arrest, death, etc.)</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="paging">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+			</div>
+			<div class="section section11">
+				<div class="inner radar">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg10.mp4">
+						</video>
+					</div>
+					<div class="radar-box">
+						<div><img src="../resources/images/mac_logo.png" alt="Mac' AI"></div>
+						<div>Just Like a <strong>SONAR Vessels</strong> that</div>
+						<div>Predicts the Movement Path of Fish and Spreads Fishing-nets,</div>
+						<div><strong>It <span>Predicts</span> Arrhythmia Events</strong></div>
+						<div><strong>and Makes Sure to <span>Catch</span> Them.</strong></div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+			</div>
+			<div class="section section12 slider">
+				<div class="asis-tobe pc-only">
+					<div class="tobe-cont">
+						<div class="st-inner">
+							<h3>TO - BE</h3>
+							<div class="st-box">
+								<dl>
+									<dt><div><img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
+										<div><strong>Suspecting symptoms</strong> led to an ECG measurement,</div>
+										<div>but resulted<strong> in a normal diagnosis</strong></div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><p><img src="../resources/images/mac_logo.png" alt="Mac' AI" /></p></div></dt>
+									<dd>
+										<div>Based on a dataset of over |<strong>3 million</strong> records,</div>
+										<div><strong>make prediction</strong> of arrhythmia events.</div>
+										<div><strong>(92.7% accuracy)</strong></div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis2_2.png" alt="mac" class="img-asis2" /></div></dt>
+									<dd>
+										<div><strong>Based on evidence,</strong></div>
+										<div>Holter monitoring or wearing wearable devices</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt><div><img src="../resources/images/img_asis3_2.png" alt="mac" class="img-asis1" /></div></dt>
+									<dd>
+										<div><strong>Improvement in early diagnosis rates</strong></div>
+										<div><strong>Clear treatment</strong> strategies</div>
+										<div><strong>Prevention of serious side effects</strong></div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="asis-tobe mo-only">
+					<div class="tobe-cont">
+						<div class="stc1">
+							<h2>TO - BE<span></span></h2>
+						</div>
+						<div class="st-inner swiper tobe-swiper">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis1.png" alt="mac" class="img-asis1" />
+										<div>
+											<div><strong>Suspecting symptoms</strong> led to an ECG measurement,</div>
+											<div>but resulted<strong> in a normal diagnosis</strong></div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<div class="tobes">
+											<div>
+												<div><img src="../resources/images/mac_logo3.png" alt="Mac' AI" /></div>
+												<div>Based on a dataset of over |<strong>3 million</strong> records,</div>
+												<div><strong>make prediction</strong> of arrhythmia events.</div>
+												<div><strong>(92.7% accuracy)</strong></div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis2_2.png" alt="mac" class="img-asis2" />
+										<div>
+											<div><strong>Based on evidence,</strong></div>
+											<div>Holter monitoring or wearing wearable devices</div>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="mo-wrap">
+										<img src="../resources/images/img_asis3_2.png" alt="mac" class="img-asis1 img-asis3" />
+										<div>
+											<div><strong>Improvement in early diagnosis rates</strong></div>
+											<div><strong>Clear treatment</strong> strategies</div>
+											<div><strong>Prevention of serious side effects</strong></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="paging">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+			</div>
+			<div class="section section13">
+				<div class="mac-report">
+					<div class="video-wrap">
+						<video class="video" autoplay muted playsinline controls="controls" data-keepplaying>
+							<source type="video/mp4" src="../resources/video/vs13.mp4">
+						</video>
+					</div>
+				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+			</div>
+			<div class="section section14">
+				<div class="mac-report2">
+					
+				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+			</div>
+			<div class="section section15">
+				<div class="inner mac-outro">
+					<div class="outro">						
+						<strong>It prevents stroke and sudden death</strong>
+						<strong>through <span>arrhythmia prediction.</span></strong>
+						<div>Artificial intelligence smartly safeguards your and your family's future</div>
+					</div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+				</div>
+				<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+			</div>
+			<div class="section section16">
+				<div class="inner mac-outro mac-outro2">
+					<div class="bg"><img src="../resources/images/bg2.gif" alt="bg" /></div>
+					<div class="mac-float"><img src="../resources/images/mac_float_en.png" alt="Mac' AI" /></div>
+					<div class="outro">
+						<div class="logo"><img src="../resources/images/mac_logo.png" alt="Mac' AI" /></div>
+						<div class="logo-txt">
+							<strong>It captures hidden messages in each heartbeat,</strong>
+							<div>not missing a single moment of cardiac activity.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Ignite -->
+			<div class="section section17 slider">
+				<div class="inner mac-intro">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg1.mp4">
+						</video>
+					</div>
+					<div class="swiper ignite-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><div class="logo"><img src="../resources/images/ignite_logo.png" alt="Ignite" /></div></div>
+							<div class="swiper-slide">
+								<div class="logo-txt">
+									<strong>Obsession with precision</strong>
+									<strong>Proving it at an expert level<span>.</span></strong>
+								</div>
+								<div class="mac-float type2"><img src="../resources/images/ignite_float_en.png" alt="Ignite" /></div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section18">
+				<div class="inner radar">
+					<div class="bg">
+						<video class="video" muted playsinline loop controls="false" id="my-video1">
+							<source type="video/mp4" src="../resources/images/bg13.mp4">
+						</video>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float_en.png" alt="Ignite" /></div>
+				</div>
+			</div>
+			<div class="section section19 slider">
+				<div class="inner error-intro">
+					<div class="error-intro-inner">
+						<img src="../resources/images/ignite_img1.png" alt="Ignite" />
+						<img src="../resources/images/ignite_img2.png" alt="Ignite" />
+						<div>
+							<img src="../resources/images/ignite_img3.png" alt="같지 않다" />
+							<p>Ellipsoid measurement method:</p>
+							<div>Average <span>error rate of</span></div>
+							<div><strong>10 ~ 30%</strong></div>
+						</div>
+					</div>
+					<div class="swiper ignite-swiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"></div>
+							<div class="swiper-slide second">
+								<div class="error-box">
+									<div class="logo-txt">
+										<strong><span>'Error'</span> is a word that</strong>
+										<strong><span>doesn't align</span> with our medical practice.</span></strong>
+										<strong>It's not something we desire</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float_en.png" alt="Ignite" /></div>
+				</div>
+			</div>
+			<div class="section section20">
+				<div class="ignite-site">
+					<div class="video-wrap">
+						<video class="video" autoplay muted playsinline controls="controls" data-keepplaying>
+							<source type="video/mp4" src="../resources/video/vs20.mp4">
+						</video>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float_en.png" alt="Ignite" /></div>
+				</div>
+			</div>
+			<div class="section section21 slider">
+				<div class="inner mac-intro">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg1.mp4">
+						</video>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float_en.png" alt="Ignite" /></div>
+					<div class="swiper ignite-swiper3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide first">
+								<div class="bg">
+									<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+										<source type="video/mp4" src="../resources/images/bg1.mp4">
+									</video>
+								</div>
+								<div class="innovation">
+									<div>The innovation crafted by A.I.</div>
+									<p>Experience the value of unparalleled accuracy and perfect healthcare in a new dimension</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><img src="../resources/images/inno_img1.png" alt="Easy" /> Easy<span>.</span></dt>
+									<dd>
+										<div>Your dedicated nights for the patients,</div>
+										<div>The healthy miracles you've built, now safeguarded by A.I.</div>
+										<div>Now, entrust it without worries.</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><img src="../resources/images/inno_img2.png" alt="Fast" /> Fast<span>.</span></dt>
+									<dd>
+										<div>With processing speeds over 500 times faster than humans,</div>
+										<div>While you sleep, it diligently completes all data tasks./div>
+										<div>And of course, it never gets tired.</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><img src="../resources/images/inno_img3.png" alt="Precise" /> Precise<span>.</span></dt>
+									<dd>
+										<div>Mistakes are human nature Yet,accuracy is our AI's instinct.</div>
+										<div> Expert-level precision - even in repeated measurements, it shows a 100% match. </div>
+										<div>Set the standard as perfection. AI always aims for perfection</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section22">
+				<div class="inner error-intro">
+					<div class="error-intro-inner">
+						<img src="../resources/images/ignite_img1.png" alt="Ignite" />
+						<div>
+							<div>ADPKD</div>
+							<div class="bar"></div>
+							<div>Adding <span>precision</span> to treatment<span>.</span></div>						
+							<p><strong>Error-free</strong> healthcare, <strong>dedication</strong> that goes beyond <strong>perfection</strong></p>
+						</div>
+					</div>
+					<div class="mac-float type2"><img src="../resources/images/ignite_float_en.png" alt="Ignite" /></div>
+				</div>
+			</div>
+			<!-- HyperMedicus -->
+			<div class="section section23 slider">
+				<div class="inner hyper">
+					<div class="bg">
+						<video class="video" autoplay muted playsinline loop controls="false" data-keepplaying>
+							<source type="video/mp4" src="../resources/images/bg3.mp4">
+						</video>
+					</div>
+					<div class="swiper hyper-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="logo av-center"><img src="../resources/images/hyper_logo.png" alt="Hypermedicus" /></div>
+							</div>
+							<div class="swiper-slide second">
+								<div class="logo-txt av-center">
+									<strong>Opening another level of the doctor-patient relationship.</strong>
+									<strong>Artificial intelligence serves as a mediator<span>.</span></strong>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 3KM -->
+			<div class="section section24 slider">
+				<div class="inner 3km">
+					<div class="bg"><img src="../resources/images/bg4.gif" alt="bg" /></div>
+					<div class="swiper km-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="logo av-center"><img src="../resources/images/km_logo_en.png" alt="3km doctor" /></div>
+							</div>
+							<div class="swiper-slide second">
+								<div class="logo-txt av-center">
+									<strong>Seeking the Doctor for Me: </strong>
+									<strong>In Search of the Genuine Primary Care Physician<span>.</span></strong>
+									<div>[Scheduled to be released in the first half of 2024]</div>
+								</div>
+							</div>
+						</div>
+						<div class="paging">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-wrap">
+			<a href="javascript:;" class="btn-nav">MENU</a>
+			<ul class="nav">
+				<li data-menuanchor="section3"><a href="#section3" onclick="closeNav()">Mac' AI</a></li>
+				<li data-menuanchor="section17"><a href="#section17" onclick="closeNav()">Ignite</a></li>
+				<li data-menuanchor="section23"><a href="#section23" onclick="closeNav()">HyperMedicus</a></li>
+				<li data-menuanchor="section24"><a href="#section24" onclick="closeNav()">3KM</a></li>
+			</ul>
+		</div>
+		<div class="langs">
+			<a href="0-main-page-en.html">EN</a>
+			<a href="0-main-page.html">KR</a>			
+		</div>
+		<a href="javascript:;" class="btn-top"><span>TOP</span></a>
+		<script>
+			function nav(obj){
+				var num = $(obj).attr("data-num");
+				//$(obj).addClass("on");
+				$.fn.fullpage.moveTo(num);
+			};
+			$(".nav-wrap .btn-nav").on("click", function (){
+				$(this).toggleClass("open");
+			});
+			$(document).ready(function() {
+				setTimeout(function(){
+					$(".wrap").addClass("loaded");
+				},1000);
+			  $("#fullpage").fullpage({         
+				anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'section13', 'section14', 'section15', 'section16', 'section17', 'section18', 'section19', 'section20', 'section21', 'section22', 'section23', 'section24'],
+				menu: '.nav',
+				//scrollOverflow: true,
+				scrollingSpeed: 600,
+				onLeave: function(origin, destination, direction) {
+				  // 빠른전환으로 이벤트중복시 fullpage와 swiper전환시점 분리막기
+				  $('#fullpage').on('scroll touchmove mousewheel', function(event) {                    
+					event.preventDefault();
+					event.stopPropagation();
+					return false;
+				  });
+				  swiper1.mousewheel.disable();
+				  swiper2.mousewheel.disable();
+				  swiper3.mousewheel.disable();
+				  swiper4.mousewheel.disable();
+				  swiper5.mousewheel.disable();
+				  swiper6.mousewheel.disable();
+				  swiper7.mousewheel.disable();
+				  swiper8.mousewheel.disable();
+				  swiper9.mousewheel.disable();
+				  swiper10.mousewheel.disable();
+				  if(swiper1) swiper1.slideTo(0);
+				  if(swiper2) swiper2.slideTo(0);
+				  if(swiper3) swiper3.slideTo(0);
+				  if(swiper4) swiper4.slideTo(0);
+				  if(swiper5) swiper5.slideTo(0);
+				  if(swiper6) swiper6.slideTo(0);
+				  if(swiper7) swiper7.slideTo(0);
+				  if(swiper8) swiper8.slideTo(0);
+				  if(swiper9) swiper9.slideTo(0);
+				  if(swiper10) swiper10.slideTo(0);
+				},
+				afterLoad: function(anchorLink, index) {      
+				  // 전환이 끝난후 이벤트풀기                               
+				  $('#fullpage').off('scroll mousewheel');      
+				  if(!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove'); // 모바일분기
+				  if(swiper1) swiper1.mousewheel.enable();
+				  if(swiper2) swiper2.mousewheel.enable();
+				  if(swiper3) swiper3.mousewheel.enable();
+				  if(swiper4) swiper4.mousewheel.enable();
+				  if(swiper5) swiper5.mousewheel.enable();
+				  if(swiper6) swiper6.mousewheel.enable();
+				  if(swiper7) swiper7.mousewheel.enable();
+				  if(swiper8) swiper8.mousewheel.enable();
+				  if(swiper9) swiper9.mousewheel.enable();
+				  if(swiper10) swiper10.mousewheel.enable();
+				  if(!$(".slider").hasClass("active")) {
+					  $.fn.fullpage.setAllowScrolling(true);
+					   //if(swiper1) swiper1.slideTo(0);
+				  }
+				  var $video1 = $('#my-video1')[0];
+				  if($(".section18").hasClass("active")){
+					 $video1.pause();
+					 $video1.currentTime = 0;
+					 $video1.play();
+				  };	
+				  if($(".section1").hasClass("active")){
+					 $(".wrap").addClass("first-page");
+				  }else{
+					$(".wrap").removeClass("first-page");
+				  };
+				  if($(".section13").hasClass("active") || $(".section14").hasClass("active") || $(".section20").hasClass("active")){
+					 $(".wrap").addClass("white");
+				  }else{
+					$(".wrap").removeClass("white");
+				  };
+				},
+			  });
+
+			  // swiper1
+			  var length1 = $(".mole-swiper .swiper-slide").length;
+			  var swiper1 = new Swiper('.mole-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 800,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					// 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
+					if(this.activeIndex != 0 && idx != length1) $.fn.fullpage.setAllowScrolling(false);
+					if(length1 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) //슬라이드가 2개밖에 없을때
+					//console.log('즉시 : ' + idx);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					// 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
+					if(idx == 0 || idx >= length1-1) $.fn.fullpage.setAllowScrolling(true);
+					 //console.log('전환후 : ' + idx);     
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper1.slideNext();  
+					  else swiper1.slidePrev();
+					},10);        
+				  },
+				}, 
+				pagination: {
+					el: ".mole-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".mole-swiper .swiper-button-next",
+					prevEl: ".mole-swiper .swiper-button-prev",
+				},
+			  });
+			  
+			  // swiper2
+			  var length2 = $(".arr-swiper .swiper-slide").length;
+			  var swiper2 = new Swiper('.arr-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length2) $.fn.fullpage.setAllowScrolling(false);
+					if(length2 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length2-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper2.slideNext();  
+					  else swiper2.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".arr-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".arr-swiper .swiper-button-next",
+					prevEl: ".arr-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper3
+			  var length3 = $(".period-swiper .swiper-slide").length;
+			  var swiper3 = new Swiper('.period-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length3) $.fn.fullpage.setAllowScrolling(false);
+					if(length3 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length3-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper3.slideNext();  
+					  else swiper3.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".period-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".period-swiper .swiper-button-next",
+					prevEl: ".period-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper4
+			  var length4 = $(".ignite-swiper .swiper-slide").length;
+			  var swiper4 = new Swiper('.ignite-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length4) $.fn.fullpage.setAllowScrolling(false);
+					if(length4 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length4-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper4.slideNext();  
+					  else swiper4.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".ignite-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".ignite-swiper .swiper-button-next",
+					prevEl: ".ignite-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper5
+			  var length5 = $(".ignite-swiper2 .swiper-slide").length;
+			  var swiper5 = new Swiper('.ignite-swiper2', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length5) $.fn.fullpage.setAllowScrolling(false);
+					if(length5 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length5-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper5.slideNext();  
+					  else swiper5.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".ignite-swiper2 .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".ignite-swiper2 .swiper-button-next",
+					prevEl: ".ignite-swiper2 .swiper-button-prev",
+				},
+			  });
+
+			  // swiper6
+			  var length6 = $(".ignite-swiper3 .swiper-slide").length;
+			  var swiper6 = new Swiper('.ignite-swiper3', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length6) $.fn.fullpage.setAllowScrolling(false);
+					if(length6 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length6-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper6.slideNext();  
+					  else swiper6.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".ignite-swiper3 .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".ignite-swiper3 .swiper-button-next",
+					prevEl: ".ignite-swiper3 .swiper-button-prev",
+				},
+			  });
+
+			  // swiper7
+			  var length7 = $(".hyper-swiper .swiper-slide").length;
+			  var swiper7 = new Swiper('.hyper-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length7) $.fn.fullpage.setAllowScrolling(false);
+					if(length7 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length7-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper7.slideNext();  
+					  else swiper7.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".hyper-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".hyper-swiper .swiper-button-next",
+					prevEl: ".hyper-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper8
+			  var length8 = $(".km-swiper .swiper-slide").length;
+			  var swiper8 = new Swiper('.km-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length8) $.fn.fullpage.setAllowScrolling(false);
+					if(length8 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length8-1) $.fn.fullpage.setAllowScrolling(true);
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper8.slideNext();  
+					  else swiper8.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".km-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".km-swiper .swiper-button-next",
+					prevEl: ".km-swiper .swiper-button-prev",
+				},
+			  });
+
+			  // swiper9
+			  var length9 = $(".asis-swiper .swiper-slide").length;
+			  var swiper9 = new Swiper('.asis-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length9) $.fn.fullpage.setAllowScrolling(false);console.log("false1")
+					if(length9 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);console.log("false2")
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length9-1) $.fn.fullpage.setAllowScrolling(true);
+					console.log("true")
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper9.slideNext();  
+					  else swiper9.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".asis-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".asis-swiper .swiper-button-next",
+					prevEl: ".asis-swiper .swiper-button-prev",
+				},
+			  });
+			  // swiper10
+			  var length10 = $(".tobe-swiper .swiper-slide").length;
+			  var swiper10 = new Swiper('.tobe-swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				freeMode: false,
+				speed: 600,
+				mousewheel: true,
+				on: {
+				  slideChange: function(){        
+					var idx = this.activeIndex;
+					if(this.activeIndex != 0 && idx != length10) $.fn.fullpage.setAllowScrolling(false);console.log("false1")
+					if(length10 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false);console.log("false2")
+				  },  
+				  slideChangeTransitionEnd: function(){
+					var idx = this.activeIndex;
+					if(idx == 0 || idx >= length10-1) $.fn.fullpage.setAllowScrolling(true);
+					console.log("true")
+				  },
+				  touchMove: function(e) {        
+					var startY = e.touches.startY;
+					setTimeout(function(){
+					  if(startY > e.touches.currentY) swiper10.slideNext();  
+					  else swiper10.slidePrev();
+					},10);        
+				  },
+				},
+				pagination: {
+					el: ".tobe-swiper .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".tobe-swiper .swiper-button-next",
+					prevEl: ".tobe-swiper .swiper-button-prev",
+				},
+			  });
+
+
+			});
+		</script>
+	</div>
+</div>
+</body>
+</html>
