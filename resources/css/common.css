@@ -525,7 +525,7 @@ label:hover {cursor:pointer;}
 
 .mac-report {width:100%;height:100vh;/*background:#fff url(../images/bg11.jpg) no-repeat center 0/contain;*/}
 .mac-report2 {width:100%;height:100vh;background:#fff url(../images/bg12.jpg) no-repeat center 0/contain;}
-.wrap.white .mac-report2 {background:#fff url(../images/bg12_en.jpg) no-repeat center 0/contain;}
+.wrap.en .mac-report2 {background:#fff url(../images/bg12_en.jpg) no-repeat center 0/contain;}
 .ignite-site {width:100%;height:100vh;/*background:#fff url(../images/bg14.jpg) no-repeat center 0/contain;*/}
 @media (max-width:750px) {
 	.mac-report {/*background-position:right 11% top;background-size:cover;*/}
